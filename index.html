@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crystal Optical — Eyeglasses &amp; Sunglasses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="logo" href="#top" aria-label="Crystal Optical home"><svg width="34" height="18" viewBox="0 0 200 80" fill="none" stroke="#7FD3EC" stroke-width="11"><circle cx="50" cy="40" r="30"/><circle cx="150" cy="40" r="30"/><path d="M80 34q20-14 40 0"/></svg>Crystal Optical</a>
+  <nav aria-label="Main"><a href="#categories">Categories</a><a href="#shop">Shop</a><a href="#fit">Find your fit</a><a href="#store">Store</a><a href="#faq">Help</a></nav>
+  <div class="icons">
+    <button class="ib" id="theme" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24"><path d="M21 13A9 9 0 1111 3a7 7 0 0010 10z"/></svg></button>
+    <button class="ib" id="open" aria-label="Open cart"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8a3 3 0 016 0"/></svg><span id="count">0</span></button>
+  </div>
+</div></header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Crystal-clear frames. Shades that shine.</h1>
+      <p>Eyeglasses and sunglasses, lightweight and made to be worn all day. Prescription lenses from ₹1,499. Try five frames at home, free.</p>
+      <div class="cta"><a class="btn" href="#categories">Shop glasses</a><a class="btn ghost" href="#fit">Find my frame</a></div>
+      <div class="trust"><span>✔ Free home try-on</span><span>✔ 30-day returns</span><span>✔ 1-year warranty</span></div>
+    </div>
+    <div class="hero-art"><div class="cmp" id="cmp" style="--x:50%">
+  <img id="cmpA" alt="Landscape shown clear, before shade"><img class="top" id="cmpB" alt="Same landscape with shade applied">
+  <span class="lab l">Clear</span><span class="lab r">Shade</span>
+  <div class="knob" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+  <input type="range" min="0" max="100" value="50" id="rng" aria-label="Drag to switch between clear eyeglasses and sunglasses">
+  <span class="hint">Drag to switch</span></div></div>
+  </div>
+  <svg class="waves b" viewBox="0 0 1440 130" preserveAspectRatio="none"><path fill="#2A9CBF" d="M0 60Q180 0 360 60T720 60T1080 60T1440 60V130H0z"/></svg>
+  <svg class="waves" viewBox="0 0 1440 130" preserveAspectRatio="none"><path fill="var(--bg)" d="M0 70Q180 20 360 70T720 70T1080 70T1440 70V130H0z"/></svg>
+</div>
+
+<div class="wrap perks">
+  <div class="perk"><b>Free shipping</b><span>On orders over ₹2,999</span></div>
+  <div class="perk"><b>Free home try-on</b><span>5 frames, 7 days</span></div>
+  <div class="perk"><b>Blue-light lenses</b><span>Included on every pair</span></div>
+  <div class="perk"><b>30-day returns</b><span>No questions asked</span></div>
+</div>
+
+<section id="categories"><div class="wrap">
+  <div class="head"><h2>Two ways to see it</h2><p>Everyday eyeglasses for clear sight, sunglasses for bright days.</p></div>
+  <div class="cats"><button class="cat" data-k="eye"><img id="catE" alt="Titan eyeglasses on a teal case"><span><b>Eyeglasses</b><small id="nE"></small></span></button>
+  <button class="cat" data-k="sun"><img id="catS" alt="Rose and black sunglasses beside a palm leaf"><span><b>Sunglasses</b><small id="nS"></small></span></button></div>
+</div></section>
+<section id="shop"><div class="wrap">
+  <div class="head"><h2>The current collection</h2><p>Pick a shape, choose a colour, add to bag. Prescription is added at checkout.</p></div>
+  <div class="chips" id="cchips" role="group" aria-label="Filter by type"></div><div class="chips" id="chips" role="group" aria-label="Filter by shape"></div>
+  <div class="grid" id="grid" aria-live="polite"></div>
+</div></section>
+
+<section id="store"><div class="wrap"><div class="storebox"><img id="storeImg" alt="Two shoppers trying on sunglasses in a Crystal Optical store"><div><h2>Try them on in person</h2><p>Visit a store, pick up a few pairs and get a free eye check before you decide.</p><button class="btn" id="book">Book a visit</button></div></div></div></section>
+<section id="fit"><div class="wrap"><div class="fit">
+  <div><h2>Not sure which shape suits you?</h2><p>Choose your face shape and we'll point you to the frames that balance it.</p>
+    <div id="fitres" aria-live="polite"></div></div>
+  <div class="faces" id="faces"></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap faq">
+  <div class="head"><h2>Good to know</h2></div>
+  <details><summary>How does the home try-on work?</summary><p>Pick up to five frames, we ship them free, and you have seven days to decide. Return the box with the prepaid label.</p></details>
+  <details><summary>Can I add my prescription?</summary><p>Yes. Upload your prescription or enter values at checkout. Single-vision, progressive and reading lenses are available.</p></details>
+  <details><summary>What if they don't fit?</summary><p>Return any pair within 30 days for a full refund or a free exchange.</p></details>
+  <details><summary>What are the frames made of?</summary><p>Acetate blended with recycled ocean-bound plastic, with stainless steel hinges.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap fgrid">
+  <div><h3>Crystal Optical</h3><p>Clear vision, lighter footprint. Designed for everyday life by the water or nowhere near it.</p>
+    <form class="news" id="news"><input type="email" required placeholder="Your email" aria-label="Email address"><button class="btn" type="submit">Join</button></form></div>
+  <div><h3>Shop</h3><ul><li><a href="#shop">All glasses</a></li><li><a href="#fit">Find your fit</a></li></ul></div>
+  <div><h3>Help</h3><ul><li><a href="#faq">FAQ</a></li><li>hello@crystaloptical.example</li></ul></div>
+  <p class="copy" style="grid-column:1/-1">© 2026 Crystal Optical. Demo store.</p>
+</div></footer>
+
+<div id="veil"></div>
+<aside id="cart" aria-label="Shopping bag" aria-hidden="true">
+  <div class="ch"><h2>Your bag</h2><button class="ib" id="close" aria-label="Close cart" style="color:var(--ink)"><svg viewBox="0 0 24 24" style="stroke:currentColor;fill:none;stroke-width:2;width:22px"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="ship" id="ship"></div>
+  <div id="items"></div>
+  <div class="cf"><div class="tot"><span>Total</span><span id="total">₹0</span></div><button class="btn" style="width:100%" id="checkout">Checkout</button></div>
+</aside>
+<div id="toast" role="status"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
